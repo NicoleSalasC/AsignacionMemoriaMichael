@@ -1,9 +1,10 @@
 
 package administracion.por.paginacion;
-import java.util.ArrayList;
+
 import java.util.Scanner;
 /**
- *
+ *La clase principal para la administracion de procesos en un sistema de gestion de memoria por paginacion. 
+ * Permite gestionar los procesos, mover los proceso y ver el estado de los procesos. 
  * @author Ashley Hernandez
  * @author Jeison Alvarez
  * @author Nicole Salas
@@ -12,15 +13,24 @@ import java.util.Scanner;
 public class AdministracionPorPaginacion {
 
     /**
-     * @param args the command line arguments
+     * Metodo principal que inicia la ejecucion del programa y llama al menu principal. 
+     * @param args 
      */
     public static void main(String[] args) {
 
         imprimirMenu();
     }
 
+    /**
+     * Instancia de la clase Proceso, se utiliza para la manipulacion y la gestion de los procesos. 
+     * 
+     */
     static Proceso pr = new Proceso();
-
+    
+    /**
+     * Metodo para mostrar el menu principal, gestionando las opciones selecionadas por el usuario. 
+     * Permite agregar, ejecutar, mostrar y mover procesos, asi como ver las memorias principales, segundarias y los procesos terminados. 
+     */
     public static void imprimirMenu() {
         Scanner scanner = new Scanner(System.in);
 
